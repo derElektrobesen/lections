@@ -36,7 +36,7 @@ func query(q string, args ...interface{}) *sql.Rows {
 }
 
 func init() {
-	database, err := sql.Open("mysql", "golang_int_user:testpass@tcp(195.211.23.152:5435)/golang_intensive")
+	database, err := sql.Open("mysql", "golang_int_user:testpass@tcp(195.211.23.152:5435)/golang_intensive?parseTime=true")
 	if err != nil {
 		log.Fatalf("Can't connect to database: %s", err)
 	}
