@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\usepackage{polyglossia} % multi-language support
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\PolyglossiaSetup{english}{indentfirst=true}
+\PolyglossiaSetup{russian}{indentfirst=true}
+
+\defaultfontfeatures{Mapping=tex-text} % for converting "--" and "---"
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+
+\usepackage{indentfirst}
+\renewcommand{\labelitemi}{\normalfont\bfseries{--}}
+
+\topmargin -1cm
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17cm
+\textheight 24cm
+
+\newcommand{\Code}[1]{\textbf{#1}}
+
+\author{Бережной~П.~Ю.}
+\title{Домашнее задание по курсу \\ подготовительной программы по программированию на \tt{C/C++}}
+
+\begin{document}
+
+\maketitle
+
+\input{hw3/5.tex}
+
+\end{document}
