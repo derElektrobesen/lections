@@ -1,0 +1,25 @@
+Реализовать базовый класс Item (единица хранения в
+		библиотеке), содержащий данные-члены:
+invNumber~-- инвентарный номер и taken~--
+взято на руки или имеется в наличии, а также методы:
+\begin{description}
+	\item{\Code{virtual void Show();}} //показать информацию о единице
+		хранения
+	\item{\Code{bool isAvailable();}} // есть ли единица хранения в наличии ?
+\item{\Code{int GetinvNumber();}} //возвращает инвентарный номер
+\item{\Code{void Take();}} // операция <<взять>>
+\item{\Code{void Return();}}// операция <<вернуть>>
+\end{description}
+
+Построить производные классы Book и Magazin.
+Класс Book содержит данные-члены: \Code{author}, \Code{title}, \Code{publisher},
+\Code{year}
+и методы: \Code{Author();} \Code{Title();} \Code{Publisher();} \Code{YearOfPublishing();} \Code{Show()}.
+
+Класс Magazin включает данные-члены: \Code{volume;} \Code{number;} \Code{year;} \Code{title}
+и методы: \Code{Volume();} \Code{Title();} \Code{Number();} \Code{Year();} \Code{Show()}.
+
+Создать массив указателей на объекты базового класса и
+заполнить этот массив объектами производных классов.
+Вызвать метод \Code{Show()} базового класса и просмотреть массив
+объектов.
